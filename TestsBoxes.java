@@ -6,4 +6,11 @@ public class TestsBoxes{
 	public void testBoxCreate(){
 		Box b = new Box();
 	}
-};
+
+	@Test
+	public void testBoxAdd(){
+	Box b = new Box();
+	b.add("truc1");
+	b.add("truc2");
+	}
+}
