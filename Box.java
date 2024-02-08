@@ -1,9 +1,24 @@
 import java.util.ArrayList;
-class Box{
+import java.util.List;
 
-	ArrayList<String> contents = new ArrayList<String>();
+class Thing {
+	String name;
 
-	public void add (String truc){
-		this.contents.add(truc);
+	public Thing(String name) {
+		this.name = name;
+	}
+}
+
+class Box {
+
+	List<Thing> contents;
+
+	public Box() {
+		contents = new ArrayList<Thing>();
+	}
+
+	public void add(String truc) {
+		Thing nouveau = new Thing(truc);
+		this.contents.add(nouveau);
 	}
 }
